@@ -264,7 +264,7 @@ public class frmCompilador extends javax.swing.JFrame {
     
     public void obtenerDatos_CrearBinario() {
         int fila = tblCompilador.getRowCount();
-        int i, cargarDecimal;
+        int i;
         try {
             OutputStream archivo = new FileOutputStream(txtNombreArchivo.getText()+".bin");
             DataOutputStream escritura = new DataOutputStream(archivo);
@@ -389,8 +389,6 @@ public class frmCompilador extends javax.swing.JFrame {
                 break;
         }
     }
-    
-    
     
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
